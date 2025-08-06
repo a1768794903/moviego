@@ -40,7 +40,7 @@ moviepy-go/
 
 1. 克隆仓库：
 ```bash
-git clone https://github.com/your-username/moviepy-go.git
+git clone https://github.com/a1768794903/moviego.git
 cd moviepy-go
 ```
 
