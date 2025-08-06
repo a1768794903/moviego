@@ -1,6 +1,6 @@
-# MoviePy Go
+# MovieGo
 
-MoviePy Go 是用 Golang 重写的 MoviePy 项目，专注于解决原 Python 版本中的僵尸进程问题，并提供高性能的视频处理能力。
+MovieGo 是用 Golang 重写的 MoviePy 项目，专注于解决原 Python 版本中的僵尸进程问题，并提供高性能的视频处理能力。
 
 ## 特性
 
@@ -18,7 +18,7 @@ MoviePy Go 是用 Golang 重写的 MoviePy 项目，专注于解决原 Python �
 ## 架构
 
 ```
-moviepy-go/
+moviego/
 ├── pkg/
 │   ├── core/           # 核心接口和基础实现
 │   ├── ffmpeg/         # FFmpeg 集成和进程管理
@@ -41,7 +41,7 @@ moviepy-go/
 1. 克隆仓库：
 ```bash
 git clone https://github.com/a1768794903/moviego.git
-cd moviepy-go
+cd moviego
 ```
 
 2. 安装依赖：
@@ -63,8 +63,8 @@ package main
 
 import (
     "log"
-    "moviepy-go/pkg/ffmpeg"
-    "moviepy-go/pkg/video"
+    "moviego/pkg/ffmpeg"
+    "moviego/pkg/video"
 )
 
 func main() {
