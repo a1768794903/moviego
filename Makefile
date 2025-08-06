@@ -8,7 +8,7 @@ all: build
 # 构建主程序
 build:
 	@echo "构建 MoviePy Go..."
-	go build -o bin/moviepy-go cmd/main.go
+	go build -o bin/moviego cmd/main.go
 
 # 构建所有示例
 examples: build
@@ -49,7 +49,7 @@ run: build
 		echo "请指定输入视频文件: make run INPUT=video.mp4"; \
 		exit 1; \
 	fi
-	./bin/moviepy-go $(INPUT)
+	./bin/moviego $(INPUT)
 
 # 测试
 test:
@@ -86,9 +86,9 @@ lint:
 # 交叉编译
 cross-build:
 	@echo "交叉编译..."
-	GOOS=linux GOARCH=amd64 go build -o bin/moviepy-go-linux-amd64 cmd/main.go
-	GOOS=windows GOARCH=amd64 go build -o bin/moviepy-go-windows-amd64.exe cmd/main.go
-	GOOS=darwin GOARCH=amd64 go build -o bin/moviepy-go-darwin-amd64 cmd/main.go
+	GOOS=linux GOARCH=amd64 go build -o bin/moviego-linux-amd64 cmd/main.go
+	GOOS=windows GOARCH=amd64 go build -o bin/moviego-windows-amd64.exe cmd/main.go
+	GOOS=darwin GOARCH=amd64 go build -o bin/moviego-darwin-amd64 cmd/main.go
 
 # 安装依赖
 install-deps:
